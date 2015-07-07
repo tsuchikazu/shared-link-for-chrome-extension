@@ -1,0 +1,25 @@
+{
+  "name": "shared-link-for-chrome-extension",
+  "version": "1.0.0",
+  "description": "Chrome extension such as Shared Links in the Safari",
+  "main": "index.js",
+  "scripts": {
+    "watch": "watchify -d src/popup.js -t babelify -o dist/popup.js -v",
+    "build": "browserify -d src/popup.js -t babelify > dist/popup.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/tsuchikazu/shared-link-for-chrome-extension.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tsuchikazu/shared-link-for-chrome-extension/issues"
+  },
+  "homepage": "https://github.com/tsuchikazu/shared-link-for-chrome-extension",
+  "devDependencies": {
+    "babelify": "^6.1.2",
+    "browserify": "^10.2.4",
+    "watchify": "^3.2.3"
+  }
+}
